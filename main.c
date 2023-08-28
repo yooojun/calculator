@@ -1,52 +1,55 @@
-#include<stdio.h>
-#include<conio.h>
-float addFun(float, float);
-float subFun(float, float);
-float mulFun(float, float);
-float divFun(float, float);
 
-int main()
-{
-   float num1, num2, res;
-   int choice;
-   
-   
-    switch(choice)
-    {
-        case 1:
-        res = addFun(num1, num2);
-        break;
-        case 2:
-        res = subFun(num1, num2);
-        break;
-        case 3:
-        res = mulFun(num1, num2);
-        break;
-        case 4:
-        res = divFun(num1, num2);
-        break;
-        
-        default:
-        break;
+#include <stdio.h>
+
+int add(int, int);
+int sub(int, int);
+int div(int, int);
+int multi(int, int);
+
+
+
+int main (int argc, char* arv[]) {
+
+    int a, b, c;
+    char operator;
+
+    printf("Please enter a expression");
+    scanf("%d %c %d", &a, &operator, &b);
+
+    switch (operator) {
+        case '+':
+            c = add(a, b);
+            break;
+
+        case '-':
+            c = sub(a, b);
+            break;
+
+        case '*':
+            c = multi(a, b);
+            break;
+            
+        case '/':
+            c = div(a, b);
+            break;
     }
-      
 
-   return 0;
+
+    return 0;
 }
 
-float addFun(float a, float b)
-{
+int add(int a, int b) {
     return 1;
 }
-float subFun(float a, float b)
-{
+
+int sub(int a, int b) {
     return 1;
 }
-float mulFun(float a, float b)
-{
-    return a*b;
+
+int multi(int a, int b) {
+    return 1;
 }
-float divFun(float a, float b)
-{
+
+int div(int a, int b) {
     return 1;
 }
