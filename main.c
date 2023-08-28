@@ -1,3 +1,4 @@
+// V 1.0
 #include <stdio.h>
 
 int add(int, int);
@@ -38,17 +39,17 @@ int main (int argc, char* arv[]) {
 }
 
 int add(int a, int b) {
-    return 1;
+    return a + b;
 }
 
 int sub(int a, int b) {
-    return 1;
+    return a - b;
 }
 
 int multi(int a, int b) {
-    return 1;
+    return a * b;
 }
 
 int div(int a, int b) {
-    return 1;
+    return a / b;
 }
