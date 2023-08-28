@@ -39,12 +39,11 @@ int main (int argc, char* arv[]) {
 }
 
 int add(int a, int b) {
-    int result = a + b;
-    return result;
+    return 1;
 }
 
 int sub(int a, int b) {
-    return a-b;
+    return 1;
 }
 
 int multi(int a, int b) {
